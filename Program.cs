@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Diagnostics;
 
 namespace Skatteberegning
 {
@@ -10,6 +11,7 @@ namespace Skatteberegning
   {
     static void Main(string[] args)
     {
+      Satser.SætÅr(2012); //foretag beregninger baseret på 2012-tal
 
       Console.WriteLine("Beregn skat:");
 
@@ -17,7 +19,7 @@ namespace Skatteberegning
       int personalegode = 2600;
       int kapitalindkomst = -28500;
       int ligningsmæssigefradrag = 10800;      
-      int skat = Skatteberegning.Skat(2014, løn, personalegode, kapitalindkomst, ligningsmæssigefradrag);
+      int skat = Skatteberegning.Skat(løn, personalegode, kapitalindkomst, ligningsmæssigefradrag);
 
       Console.WriteLine("Beregnet skat (indkomstskat + arbejdsmarkedsbidrag - grøncheck): " + skat + " Kr.");
 
