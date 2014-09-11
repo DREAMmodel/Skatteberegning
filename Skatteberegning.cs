@@ -81,7 +81,6 @@ namespace Skatteberegning
     /*Kompensation for lavere værdi af rentefradrag:
 3 pct. af negativ nettokapitalindkomst op til 50.000 kr.*/
 
-
     static int GrønCheck(int alder, int personligindkomst, int børn = 0)
     {
       //Tillæg til grøn check?

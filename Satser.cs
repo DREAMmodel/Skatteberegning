@@ -119,7 +119,7 @@ namespace Skatteberegning
       _topskattegrænse = Convert.ToInt32(Math.Ceiling(Convert.ToDouble(_topskattegrænse) * pl / 100) * 100); //PSL-20 reguleres, rundes op til nærmeste 100
       _personfradrag = Convert.ToInt32(Math.Ceiling(Convert.ToDouble(_personfradrag) * pl / 100) * 100); ; //PSL-20 reguleres, rundes op til nærmeste 100
       _bundfradragKapitalindkomstITopskat = Convert.ToInt32(Math.Ceiling(Convert.ToDouble(_personfradrag) * pl / 100) * 100); //PSL-20 reguleres, rundes op til nærmeste 100
-      _udligningsskattegrænse = Convert.ToInt32(Math.Ceiling(Convert.ToDouble(_udligningsskattegrænse * pl / 100) * 100); //PSL-20 reguleres, rundes op til nærmeste 100
+      _udligningsskattegrænse = Convert.ToInt32(Math.Ceiling(Convert.ToDouble(_udligningsskattegrænse * pl / 100) * 100)); //PSL-20 reguleres, rundes op til nærmeste 100
       _maksUudnyttetBundfradragMellemÆgtefæller = Convert.ToInt32(Math.Ceiling(Convert.ToDouble(_maksUudnyttetBundfradragMellemÆgtefæller) * pl / 100) * 100); //PSL-20 reguleres, rundes op til nærmeste 100
       _progressionsgrænseAktieindkomstskat = Convert.ToInt32(Math.Ceiling(Convert.ToDouble(_progressionsgrænseAktieindkomstskat) * pl / 100) * 100); //PSL-20 reguleres, rundes op til nærmeste 100
 
